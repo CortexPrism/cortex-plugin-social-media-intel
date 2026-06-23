@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-social-media-intel",
-  "version": "1.0.0",
-  "description": "Social Media Intelligence — Twitter/X, Reddit, LinkedIn, YouTube aggregation for brand mentions, sentiment, and competitor tracking",
+  "version": "1.0.1",
+  "description": "Social Media Intelligence \u2014 Twitter/X, Reddit, LinkedIn, YouTube aggregation for brand mentions, sentiment, and competitor tracking",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,21 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-social-media-intel",
   "homepage": "https://cortexprism.io/marketplace/plugins/social-media-intel",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "social_track_mentions",
       "description": "Track brand mentions across platforms",
       "params": []
     },
-    { "name": "social_analyze_sentiment", "description": "Analyze sentiment trends", "params": [] },
+    {
+      "name": "social_analyze_sentiment",
+      "description": "Analyze sentiment trends",
+      "params": []
+    },
     {
       "name": "social_competitor_analysis",
       "description": "Track competitor activity",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
